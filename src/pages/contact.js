@@ -1,8 +1,10 @@
+import Link from 'next/link';
+
 export default function Contact() {
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-50 p-8">
+        <div className="flex items-center justify-center min-h-screen bg-orange-50 p-8">
             <div className="bg-white p-10 rounded-lg shadow-lg max-w-xl w-full">
-                <h1 className="text-4xl font-semibold text-center text-indigo-600 mb-6">
+                <h1 className="text-4xl font-semibold text-center text-orange-600 mb-6">
                     Contact Us
                 </h1>
                 <p className="text-lg text-gray-700 mb-8 text-center">
@@ -18,7 +20,7 @@ export default function Contact() {
                             type="text"
                             id="name"
                             placeholder="Your name"
-                            className="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600"
+                            className="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-600"
                         />
                     </div>
 
@@ -30,7 +32,7 @@ export default function Contact() {
                             type="email"
                             id="email"
                             placeholder="Your email"
-                            className="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600"
+                            className="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-600"
                         />
                     </div>
 
@@ -42,16 +44,24 @@ export default function Contact() {
                             id="message"
                             rows="4"
                             placeholder="Your message"
-                            className="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600"
+                            className="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-600"
                         ></textarea>
                     </div>
 
                     <div className="text-center">
-                        <button className="bg-indigo-600 text-white py-2 px-6 rounded-full hover:bg-indigo-700 transition duration-300">
+                        <button className="bg-orange-600 text-white py-2 px-6 rounded-full hover:bg-orange-700 transition duration-300">
                             Send Message
                         </button>
                     </div>
                 </form>
+
+                <div className="text-center mt-6">
+                    <Link href="/">
+                        <button className="bg-orange-500 text-white py-2 px-6 rounded-full hover:bg-orange-600 transition duration-300">
+                            Go to Home
+                        </button>
+                    </Link>
+                </div>
             </div>
         </div>
     );
