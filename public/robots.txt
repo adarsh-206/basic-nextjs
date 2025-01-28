@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://basic-nextjs.onrender.com
+
+# Sitemaps
+Sitemap: https://basic-nextjs.onrender.com/sitemap.xml
